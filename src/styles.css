@@ -1,1 +1,190 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
+  .header {
+    background: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Hero */
+  .hero {
+    background: linear-gradient(to right, #00bcd4, #2196f3);
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content span {
+    color: #ffe082;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn-primary {
+    padding: 10px 25px;
+    background: #fff;
+    color: #2196f3;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: #e3f2fd;
+    color: #1976d2;
+  }
+  
+  /* Sections */
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2196f3;
+  }
+  
+  /* About */
+  .about p {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+  /* Skills */
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .skill {
+    background: #2196f3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: transform 0.2s;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Projects */
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .project {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project h3 {
+    color: #1976d2;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact */
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 50px;
+  }
+  
