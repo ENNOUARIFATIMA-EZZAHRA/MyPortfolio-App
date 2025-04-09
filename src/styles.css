@@ -63,6 +63,16 @@
     color: #00bcd4;
   }
   
+ .border0{
+  border:0;
+ }
+ svg{
+  transition: all 0.3s;
+  width:28px;
+  height: 28px;
+  margin-top:0px;
+
+ }
   /* Hero */
   .hero {
     background: linear-gradient(to right, #00bcd4, #2196f3);
