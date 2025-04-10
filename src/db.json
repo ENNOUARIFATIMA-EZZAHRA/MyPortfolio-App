@@ -1,0 +1,57 @@
+{
+  "about": {
+    "name": "Fatima Ezzahra Ennouari",
+    "title": "Développeur Web Full Stack",
+    "bio": "A pasionate java Full stack building impact solutions",
+    "location": "Beni Mellal, Maroc"
+  },
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Contact Organizer App",
+      "description": " Solution pour les PME pour organiser et gérer leurs contacts professionnels efficacement.",
+      "link": "https://monportfolio.com"
+      
+    },
+    {
+      "id": 2,
+      "title": "Weather App",
+      "description": "  Application météo qui affiche les données climatiques en temps réel selon la localisation.",
+      "link": "https://github.com/ENNOUARIFATIMA-EZZAHRA/wheatherApp",
+    
+    },
+    {
+      "id": 3,
+      "title": "BeFocused App",
+      "description": " Appli pour gérer les tâches avec un minuteur Pomodoro pour améliorer la productivité.",
+      "link": "https://github.com/ENNOUARIFATIMA-EZZAHRA/to-do-list"
+      
+    },
+    {
+      "id": 4,
+      "title": "StockMaster",
+      "description": "  Application de gestion des stocks pour suivre les produits, les mouvements, et générer des rapports.",
+      "link": "https://github.com/ENNOUARIFATIMA-EZZAHRA/app-StockMaster"
+      
+    }
+  ],
+
+  "skills": [
+    { "id": 1, "name": "HTML", "level": "Avancé" },
+    { "id": 2, "name": "CSS", "level": "Avancé" },
+    { "id": 3, "name": "JavaScript", "level": "Intermédiaire" },
+    { "id": 4, "name": "Node.js", "level": "Intermédiaire" },
+    { "id": 5, "name": "Sql", "level": "Avancé" },
+    { "id": 6, "name": "Java", "level": "Intermédiaire" }
+  ],
+
+
+
+  "contact": {
+    "email": "fatimaezzahraennouari@gmail.com",
+    "phone": "+212 6 12 34 56 78",
+    "linkedin": "https://www.linkedin.com/in/ENNOUARIFATIMA-EZZAHRA",
+    "github": "https://github.com/ENNOUARIFATIMA-EZZAHRA"
+  }
+}
