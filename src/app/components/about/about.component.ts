@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-
+title = 'file-download-demo';
+public downloadFile():void{
+  
+}
 }
