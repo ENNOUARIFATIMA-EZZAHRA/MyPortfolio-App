@@ -10,4 +10,11 @@ export class HttpService {
   getAboutInfo() {
     return this.http.get("http://localhost:3000/about");
   }
+  getSkills(){
+    return this.http.get<any[]>("http://localhost:3000/skills");
+  }
+  getProjects(){
+    return this.http.get<any[]>("http://localhost:3000/projects");
+  }
+  
 }

@@ -42,12 +42,12 @@
   ],
 
   "skills": [
-    { "id": 1, "name": "HTML", "level": "Avancé" },
-    { "id": 2, "name": "CSS", "level": "Avancé" },
-    { "id": 3, "name": "JavaScript", "level": "Intermédiaire" },
-    { "id": 4, "name": "Node.js", "level": "Intermédiaire" },
-    { "id": 5, "name": "Sql", "level": "Avancé" },
-    { "id": 6, "name": "Java", "level": "Intermédiaire" }
+    { "name": "HTML", "level": "Avancé" },
+    {"name": "CSS", "level": "Avancé" },
+    {"name": "JavaScript", "level": "Intermédiaire" },
+    {"name": "Node.js", "level": "Intermédiaire" },
+    { "name": "Sql", "level": "Avancé" },
+    { "name": "Java", "level": "Intermédiaire" }
   ],
 
 

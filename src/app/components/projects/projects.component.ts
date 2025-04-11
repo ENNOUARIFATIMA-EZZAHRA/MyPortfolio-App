@@ -8,5 +8,9 @@ import { ProjectCardComponent } from '../../component/project-card/project-card.
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-
+projects :any[]=[];
+httpService= inject(httpService);
+ngOnInit(){
+  
+}
 }

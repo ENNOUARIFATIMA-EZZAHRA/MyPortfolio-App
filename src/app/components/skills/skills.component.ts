@@ -8,9 +8,12 @@ import { HttpService } from '../../http.service';
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
-skils:any[]=[];
+skills:any[]=[];
 httpService = inject(HttpService);
 ngOnInit(){
-  
+  this.httpService.getSkills().subscribe(result=>{
+    this.skills = result;
+    console.log(this.skills)
+  })
 }
 }
