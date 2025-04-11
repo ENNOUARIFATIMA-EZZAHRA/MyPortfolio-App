@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-skills',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
-
+skils:any[]=[];
+httpService = inject(HttpService);
+ngOnInit(){
+  
+}
 }

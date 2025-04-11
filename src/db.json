@@ -1,11 +1,15 @@
 {
   "about": {
-    "name": "Fatima Ezzahra Ennouari",
+    "name": "Fatima Ezzahra ",
     "title": "Développeur Web Full Stack",
     "bio": "A pasionate java Full stack building impact solutions",
-    "location": "Beni Mellal, Maroc"
+    "location": "Beni Mellal, Maroc",
+    "longInfo":"I am a skilled Java Full Stack Developer, specializing in both front-end and back-end technologies. My skills include Java EE, Spring Boot, and frameworks like Hibernate for back-end development, along with proficiency in HTML, CSS, JavaScript, and frameworks such as Bootstrap and Tailwind for the front-end. With my extensive knowledge of databases like MySQL and PostgreSQL, I leverage my full-stack capabilities to deliver comprehensive solutions from the database to the user interface."
+   
   },
 
+  
+  
   "projects": [
     {
       "id": 1,

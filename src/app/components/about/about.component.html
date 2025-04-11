@@ -1,11 +1,9 @@
 <section id="about " class="about">
     <h2>About Me</h2>
-    <p> I am a skilled Java Full Stack Developer, specializing in both front-end and back-end technologies.
-         My skills include Java EE, Spring Boot, and frameworks like Hibernate for back-end development,
-          along with proficiency in HTML, CSS, JavaScript, and frameworks such as Bootstrap and Tailwind for the front-end. 
-          With my extensive knowledge of databases like MySQL and PostgreSQL,
-           I leverage my full-stack capabilities to deliver comprehensive solutions from the database to the user interface.
-    </p>
+    @if (info) {
+      <p> {{info.longInfo}}</p>
+    }
+   
     <div class="flex justify-center mt-6">
     <button class="bg-blue-500 hover:bg-black text-white font-bold py-2 px-4 rounded inline-flex items-center">
         <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>

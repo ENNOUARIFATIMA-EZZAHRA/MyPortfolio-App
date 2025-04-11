@@ -1,4 +1,5 @@
 <section ngIf="info" id="hero" class="hero">
+    @if(info){
     <div class="hero-content">
       <h1>Hi! I'm <span>{{ info.name }}</span></h1>
       <p>{{ info.title }}</p>
@@ -6,6 +7,7 @@
       <p>{{ info.location }}</p>
       <a href="https://github.com/ENNOUARIFATIMA-EZZAHRA" class="btn-primary">View my work</a>
     </div>
+}
   </section>
   
   <app-about></app-about>

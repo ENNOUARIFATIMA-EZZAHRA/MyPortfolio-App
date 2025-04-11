@@ -9,8 +9,9 @@ import { HttpService } from '../../http.service';
 })
 export class AboutComponent {
 
-  HttpService = inject(HttpService);
   info: any;
+  aboutMe: any;
+  HttpService = inject(HttpService);
   ngOnInit(){
     this.HttpService.getAboutInfo().subscribe((result)=>{
       this.info= result;
