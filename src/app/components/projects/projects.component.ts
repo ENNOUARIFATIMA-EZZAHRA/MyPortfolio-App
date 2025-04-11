@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ProjectCardComponent } from '../../component/project-card/project-card.component';
 
 @Component({
@@ -11,6 +11,9 @@ export class ProjectsComponent {
 projects :any[]=[];
 httpService= inject(httpService);
 ngOnInit(){
-  
+  this.httpService.getProjects().subscribe((result)=>{
+    this.projects = result;
+    console.log(this.projects);
+  });
 }
 }

@@ -12,28 +12,28 @@
   
   "projects": [
     {
-      "id": 1,
+
       "title": "Contact Organizer App",
       "description": " Solution pour les PME pour organiser et gérer leurs contacts professionnels efficacement.",
       "link": "https://monportfolio.com"
       
     },
     {
-      "id": 2,
+    
       "title": "Weather App",
       "description": "  Application météo qui affiche les données climatiques en temps réel selon la localisation.",
       "link": "https://github.com/ENNOUARIFATIMA-EZZAHRA/wheatherApp"
     
     },
     {
-      "id": 3,
+      
       "title": "BeFocused App",
       "description": " Appli pour gérer les tâches avec un minuteur Pomodoro pour améliorer la productivité.",
       "link": "https://github.com/ENNOUARIFATIMA-EZZAHRA/to-do-list"
       
     },
     {
-      "id": 4,
+      
       "title": "StockMaster",
       "description": "  Application de gestion des stocks pour suivre les produits, les mouvements, et générer des rapports.",
       "link": "https://github.com/ENNOUARIFATIMA-EZZAHRA/app-StockMaster"

@@ -3,7 +3,10 @@
     <h2>Projects</h2>
     <div class="project" >
     <div class="project-list" >
-       <app-project-card></app-project-card>
+      @for(item of projects; track $index){
+        <app-project-card></app-project-card>
+      }
+      
        
        
          </div>
