@@ -1,14 +1,15 @@
-
-<section id="hero" class="hero">
+<section ngIf="info" id="hero" class="hero">
     <div class="hero-content">
-        <h1>Hi! I'm <span>Ennouari Fatima Ezzahra</span></h1>
-        <p>A pasionate <strong> java Full stack </strong>building impact solutions</p>
-        <p>Beni Mellal, Maroc</p>
-        <a href="https://github.com/ENNOUARIFATIMA-EZZAHRA" class="btn-primary">view my work</a>
+      <h1>Hi! I'm <span>{{ info.name }}</span></h1>
+      <p>{{ info.title }}</p>
+      <p>{{ info.bio }}</p>
+      <p>{{ info.location }}</p>
+      <a href="https://github.com/ENNOUARIFATIMA-EZZAHRA" class="btn-primary">View my work</a>
     </div>
-</section>
-<app-about></app-about>
-<app-skills></app-skills>
-<app-projects/>
-<app-contact-me/>
-
+  </section>
+  
+  <app-about></app-about>
+  <app-skills></app-skills>
+  <app-projects></app-projects>
+  <app-contact-me></app-contact-me>
+  

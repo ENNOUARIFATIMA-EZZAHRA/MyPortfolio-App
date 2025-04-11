@@ -6,9 +6,10 @@ import { HomeComponent } from './component/home/home.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,HeaderComponent,FooterComponent,HomeComponent],
+  standalone: true,
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] 
 })
 export class AppComponent {
   title = 'MyPortfolio';

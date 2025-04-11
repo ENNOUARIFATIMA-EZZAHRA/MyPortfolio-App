@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-about',
@@ -7,8 +8,18 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-title = 'file-download-demo';
-public downloadFile():void{
-  
+
+  HttpService = inject(HttpService);
+  info: any;
+  ngOnInit(){
+    this.HttpService.getAboutInfo().subscribe((result)=>{
+      this.info= result;
+    });
+  }
 }
-}
+
+
+
+
+
+

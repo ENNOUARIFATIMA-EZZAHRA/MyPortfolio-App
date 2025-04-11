@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { AboutComponent } from '../../components/about/about.component';
 import { SkillsComponent } from '../../components/skills/skills.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import { ContactMeComponent } from '../../components/contact-me/contact-me.component';
+import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,18 @@ import { ContactMeComponent } from '../../components/contact-me/contact-me.compo
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+httpService = inject(HttpService);
+info:any;
+ngOnInit(){
+  this.httpService.getAboutInfo().subscribe(result =>{
+    this .info = result;
+    console.log(this.info);
+  });
 }
+}
+
+
+
+
+
+
