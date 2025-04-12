@@ -1,5 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Product } from './model/product';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class HttpService {
     return this.http.get<any[]>("http://localhost:3000/skills");
   }
   getProjects(){
-    return this.http.get<any[]>("http://localhost:3000/projects");
+    return this.http.get<Product[]>("http://localhost:3000/projects");
   }
   
 }

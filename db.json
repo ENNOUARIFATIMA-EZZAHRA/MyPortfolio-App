@@ -15,6 +15,8 @@
 
       "title": "Contact Organizer App",
       "description": " Solution pour les PME pour organiser et gérer leurs contacts professionnels efficacement.",
+      "image": "assets/images/contact.png",
+      "technologies": "HTML / CSS",
       "link": "https://monportfolio.com"
       
     },
@@ -22,6 +24,8 @@
     
       "title": "Weather App",
       "description": "  Application météo qui affiche les données climatiques en temps réel selon la localisation.",
+      "image": "assets/images/weather.png",
+      "technologies": "HTML / CSS",
       "link": "https://github.com/ENNOUARIFATIMA-EZZAHRA/wheatherApp"
     
     },
@@ -29,6 +33,8 @@
       
       "title": "BeFocused App",
       "description": " Appli pour gérer les tâches avec un minuteur Pomodoro pour améliorer la productivité.",
+      "image": "assets/images/focused.png",
+       "technologies": "HTML / CSS / JS",
       "link": "https://github.com/ENNOUARIFATIMA-EZZAHRA/to-do-list"
       
     },
@@ -36,6 +42,8 @@
       
       "title": "StockMaster",
       "description": "  Application de gestion des stocks pour suivre les produits, les mouvements, et générer des rapports.",
+      "image": "assets/images/stockmaster.png",
+      "technologies": "Java / JEE",
       "link": "https://github.com/ENNOUARIFATIMA-EZZAHRA/app-StockMaster"
       
     }

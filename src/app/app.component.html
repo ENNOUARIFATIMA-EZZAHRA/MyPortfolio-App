@@ -1,9 +1,7 @@
-
-<router-outlet></router-outlet>
-
 <app-header></app-header>
-  <main>
-    <app-home></app-home>
-  </main> 
-  <app-footer></app-footer>
-  
+<main>
+  <app-home></app-home> <!-- تأكد أنك كتستعمل هاد المكون -->
+
+  <router-outlet></router-outlet> <!-- This will load the routed component here -->
+</main>
+<app-footer></app-footer>
