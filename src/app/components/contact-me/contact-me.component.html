@@ -1,11 +1,11 @@
 
 <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <form action="#" methode="post">
-        <input type="text"  name="name" placeholder="your Name" required>
-        <input type="email"  name="email" placeholder="your email" required>
-        <textarea name="message" rows="5" placeholder="Your Message"required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
+    <form [formGroup]="contactForm">
+        <input formControlName="name" type="text"  name="name" placeholder="your Name" required>
+        <input formControlName="email" type="email"  name="email" placeholder="your email" required>
+        <textarea formControlName="message" name="message" rows="5" placeholder="Your Message"required></textarea>
+        <button (click)="onSave()" type="submit" [disabled]="contactForm.invalid" [class.bg-blue-600]="contactForm.valid" [class.bg-grey-600]="contactForm.invalid" class="btn-primary">Send Message</button>
     </form>
    
 </section>

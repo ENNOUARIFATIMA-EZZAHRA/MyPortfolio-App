@@ -1,15 +1,14 @@
 {
   "name": "my-portfolio",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:MyPortfolio": "node dist/my-portfolio/server/server.mjs",
-    "start:api": "json-server --watch db.json --port 3000",
-    "start:all": "concurrently \"npm run start:api\" \"ng serve\""
+    "serve:ssr:MyPortfolio": "node dist/my-portfolio/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -22,8 +21,8 @@
     "@angular/platform-server": "^19.2.0",
     "@angular/router": "^19.2.0",
     "@angular/ssr": "^19.2.6",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-    "json-server": "^1.0.0-beta.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -38,6 +37,7 @@
     "autoprefixer": "^10.4.21",
     "concurrently": "^9.1.2",
     "jasmine-core": "~5.6.0",
+    "json-server": "^1.0.0-beta.3",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
