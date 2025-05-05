@@ -1,7 +1,11 @@
 (pour demarre le projet)
-1-installer json-server:
+1-npm install"pour ajouter les bibiothéque apres installer from github
+2-installer json-server:
 npm install -g json-server
-2-demarre server: 
+3-demarre server: 
 json-server --watch db.json --port 3000
-3-dans nouveau  cmd: ng serve
+4-netstat -ano | findstr :3000
+5-taskkill /PID  7960 /F"change this number with number in listening where write this in cmd of vs netstat -ano | findstr :3000 " 
+
+6-dans nouveau  cmd: ng serve
 

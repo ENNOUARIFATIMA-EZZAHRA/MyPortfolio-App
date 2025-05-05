@@ -1,8 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpService } from '../../http.service';
-import { Product } from '../../model/product';
-import { ProjectCardComponent } from '../../component/project-card/project-card.component';
+import { HttpService } from '../../http.service.js';
+import { Product } from '../../model/product.js';
+import { ProjectCardComponent } from '../../component/project-card/project-card.component.js';
 
 @Component({
   selector: 'app-projects',
