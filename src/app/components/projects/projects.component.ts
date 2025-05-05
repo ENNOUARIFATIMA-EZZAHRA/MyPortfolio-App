@@ -1,24 +1,31 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';  
+import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { HttpService } from '../../http.service';
 import { Product } from '../../model/product';
-import { ProjectCardComponent }  from '../../component/project-card/project-card.component'; 
+import { ProjectCardComponent } from '../../component/project-card/project-card.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, ProjectCardComponent], 
+  imports: [CommonModule, ProjectCardComponent],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
   projects: Product[] = [];
-  httpService = inject(HttpService);
+  private httpService = inject(HttpService);
 
-  ngOnInit() {
-    this.httpService.getProjects().subscribe((result) => {
-      this.projects = result;
-      console.log(this.projects);
+  ngOnInit(): void {
+    this.loadProjects();
+  }
+
+  private loadProjects(): void {
+    this.httpService.getProjects().subscribe({
+      next: (projects: Product[]) => {
+        this.projects = projects;
+        console.log('Projects loaded', projects);
+      },
+      error: (err: Error) => console.error('Error loading projects', err)
     });
   }
 }

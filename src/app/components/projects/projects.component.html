@@ -1,16 +1,6 @@
-<section id="projects" class="px-6 py-16 bg-gray-100">
-  <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Mes Projets</h2>
-
-  <!-- GRID 2x2 -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-    <div *ngFor="let project of projects" class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-fade-in">
-      <img class="w-full h-48 object-cover" src="" alt="{{ project.title }}">
-      <div class="p-6 flex flex-col gap-4">
-        <h3 class="text-xl font-semibold text-center text-gray-800">{{ project.title }}</h3>
-        <p class="text-gray-600 text-sm text-center">{{ project.description }}</p>
-        <div class="text-xs text-blue-600 font-medium text-left">Technologies : {{ project.technologies }}</div>
-        <button class="mt-4 bg-blue-600 text-white py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300">Voir Démo</button>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="projects-grid">
+  <app-project-card 
+    *ngFor="let project of projects"
+    [project]="project">
+  </app-project-card>
+</div>

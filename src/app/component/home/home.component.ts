@@ -7,6 +7,7 @@ import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [AboutComponent,SkillsComponent,ProjectsComponent,ContactMeComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -16,7 +17,7 @@ httpService = inject(HttpService);
 info:any;
 ngOnInit(){
   this.httpService.getAboutInfo().subscribe(result =>{
-    this .info = result;
+    this.info = result;
     console.log(this.info);
   });
 }

@@ -1,0 +1,7 @@
+(pour demarre le projet)
+1-installer json-server:
+npm install -g json-server
+2-demarre server: 
+json-server --watch db.json --port 3000
+3-dans nouveau  cmd: ng serve
+
